@@ -1,0 +1,552 @@
+/*
+Orange color: #e67e22
+*/
+
+/* --------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------- */
+
+
+/* --------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------------- */
+
+.logo-header {
+  height: 4rem;
+  width: 3rem;
+  margin-right: 20px;
+}
+
+.logo_home {
+  height: 100px;
+  width: 250px;
+}
+
+.rowj {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.center{
+  text-align: center;
+}
+
+.column4 {
+  float: left;
+  width: 25%;
+}
+
+.column3j {
+  float: left;
+  width: 30%;
+}
+
+.column7j {
+  float: left;
+  width: 70%;
+}
+
+.solidol {
+  outline-style: solid;
+  outline-color: #1da1f2;
+  background-color: burlywood;
+}
+
+.leftpadding {
+  padding-left: 20px;
+}
+
+/* ----- HEADINGS ----- */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 250%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 105%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* ----- PARAGRAPHS -----*/
+.intro {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 40px;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* ----- ICONS ----- */
+.icon-big {
+  font-size: 300%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  font-size: small;
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  background-color: #e67e22;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-dim:link,
+.btn-dim:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-dim:hover,
+.btn-dim:active {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* --------------------------------------- */
+/* HEADER */
+/* --------------------------------------- */
+
+
+.head-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: -30px;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+  float: left;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-left: -30px;
+}
+
+#head-logo {
+  height: 60px;
+  width: auto;
+  float: left;
+  margin: 8px 0;
+}
+
+/* Main nav */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+/* Mobile nav */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon ion-icon {
+  font-size: 200%;
+  color: #fff;
+}
+
+/* Sticky nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+
+/* --------------------------------------- */
+/* SECTION FEATURES */
+/* --------------------------------------- */
+
+.js--wp-1,
+.js--wp-2 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+/* --------------------------------------- */
+/* HOW IT WORKS */
+/* --------------------------------------- */
+
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+.section-steps h2 {
+  text-align: center;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  margin-top: 30px;
+  padding-right: 3%;
+}
+
+.steps-box:last-child {
+  margin-top: 70px;
+  padding-left: 3%;
+}
+
+.app-symbol {
+  width: 40%;
+  height: 300px;
+  width: auto;
+  float: right;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+.work-steps {
+  margin-bottom: 50px;
+}
+
+.work-steps:last-of-type {
+  margin-bottom: 80px;
+}
+
+.work-steps div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.work-steps p {
+  font-weight: bold;
+  font-size: 105%;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* --------------------------------------- */
+/* USERS" COMMENTS */
+/* --------------------------------------- */
+
+.section-comments {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/header.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 150%;
+  position: relative;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* --------------------------------------- */
+/* SIGN UP */
+/* --------------------------------------- */
+
+.section-plans {
+  background-color: #f4f4f4;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  box-shadow: 0 3px 3px #eaeaea;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+  vertical-align: middle;
+}
+
+.check-icon {
+  padding-right: 20px;
+}
+
+/* --------------------------------------- */
+/* FORM */
+/* --------------------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* --------------------------------------- */
+/* FOOTER */
+/* --------------------------------------- */
+
+footer {
+  background-color: #333;
+  padding: 40px;
+  font-size: 90%;
+}
+
+.footer-nav,
+.social-links {
+  list-style: none;
+}
+
+.footer-nav {
+  float: left;
+}
+
+.social-links {
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:after {
+  color: #ddd;
+}
+
+#facebook,
+#twitter,
+#google,
+#insta {
+  transition: color 1s;
+  font-size: 150%;
+}
+
+#facebook:hover {
+  color: #1877f2;
+}
+#twitter:hover {
+  color: #1da1f2;
+}
+#google:hover {
+  color: #ea4335;
+}
+#insta:hover {
+  color: #c32aa3;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
+}

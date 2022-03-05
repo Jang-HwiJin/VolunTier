@@ -1,3 +1,12 @@
+/* ------------------------------------------------ Header -----------------------------------------*/
+.logo-header {
+  height: 4rem;
+  width: 3rem;
+  margin-right: 20px;
+}
+
+/* ------------------------------------------------ Footer -----------------------------------------*/
+
 #facebook,
 #twitter,
 #google,
@@ -18,3 +27,54 @@
 #insta:hover {
   color: #c32aa3;
 }
+
+/* ------------------------------------------------ Home -----------------------------------------*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo_home {
+  height: 100px;
+  width: 250px;
+}
+
+/* ------------------------------------------------ Map  -----------------------------------------*/
+.column3 {
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+
+.column7 {
+  float: left;
+  width: 70%;
+}
+
+.mapSearch {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.list-group {
+  margin-left: 20px;
+}
+
+.list-group-item:hover{
+  background-color: #85F4FF;
+}
+
+
+
+/*colors
+green: #65CBB6
+blue: #78BBE6
+purple: #828AC9
+*/
