@@ -1,9 +1,26 @@
+/*colors
+green: #65CBB6
+blue: #78BBE6
+purple: #828AC9
+*/
+
 /* ------------------------------------------------ Header -----------------------------------------*/
 .logo-header {
   height: 4rem;
   width: 3rem;
   margin-right: 20px;
 }
+
+.btn-warning {
+  background-color: #78BBE6;
+  border-color: #65CBB6;
+}
+
+.btn-warning:hover {
+  background-color: #65CBB6;
+  border-color: #78BBE6;
+}
+
 
 /* ------------------------------------------------ Footer -----------------------------------------*/
 
@@ -46,9 +63,27 @@ footer {
 }
 
 .logo_home {
-  height: 100px;
-  width: 250px;
+  height: 200px;
+  width: 400px;
 }
+
+.centerText {
+  text-align: center;
+}
+
+.column33 {
+  width: 33%;
+}
+
+.spaceBelow {
+  margin-bottom: 100px;
+}
+
+.btn-success {
+  background-color: #828AC9;
+  border-color: black;
+}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
