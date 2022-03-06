@@ -685,3 +685,53 @@ green: #65CBB6
 blue: #78BBE6
 purple: #828AC9
 */
+
+.plan-box2 {
+  background-color: rgba(211, 211, 211, 0.849);
+  border-radius: 10px;
+  width: 90%;
+  box-shadow: 0 3px 3px #eaeaea;
+}
+
+#amanda {
+  background-color: cyan;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.plan-cyan {
+  background-color: cyan;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.column3r {
+  float:left;
+  width: 15%;
+  margin: 1% 20%;
+  background-color: wheat;
+}
+
+#column333 {
+  float:left;
+  width: 15%;
+  margin: 1% 20%;
+  background-color: cyan;
+}
+
+.column3rr {
+  float:left;
+  width: 40%;
+  margin: 1% 20%;
+  background-color: wheat;
+}
+
+.prs {
+  padding-right: 50%;
+}
+
+.trophyImage {
+  height: 50px;
+  weight: 50px;
+}
