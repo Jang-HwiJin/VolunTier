@@ -156,6 +156,10 @@ h2:after {
   margin-top: 30px;
 }
 
+.navbar {
+  margin-bottom: 20px;
+}
+
 /* ----- PARAGRAPHS -----*/
 .intro {
   line-height: 145%;
@@ -177,15 +181,15 @@ h2:after {
   margin-bottom: 20px;
 }
 
+
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
 input[type="submit"] {
   display: inline-block;
-  padding: 10px 30px;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
-  border-radius: 200px;
+  border-radius: .25rem;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 

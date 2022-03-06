@@ -21,6 +21,10 @@ purple: #828AC9
   border-color: #78BBE6;
 }
 
+.navbar {
+  margin-bottom: 20px;
+}
+
 
 /* ------------------------------------------------ Footer -----------------------------------------*/
 
@@ -65,6 +69,10 @@ footer {
 .logo_home {
   height: 200px;
   width: 400px;
+}
+
+.homeImage {
+  border-radius: 10%;
 }
 
 .centerText {
