@@ -8,7 +8,9 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 app.get("/", function(req, res) {
   res.render("home");
@@ -41,6 +43,23 @@ app.get("/signup", function(req, res) {
 app.get("/login", function(req, res) {
   res.render("login");
 });
+
+app.get("/confirmation", function(req, res) {
+  res.render("confirmation");
+});
+
+app.get("/ranking", function(req, res) {
+  res.render("ranking");
+});
+
+app.get("/calendar", function(req, res) {
+  res.render("calendar");
+});
+
+app.post("/calendar", function(req, res) {
+  res.render("calendar");
+});
+
 
 
 
