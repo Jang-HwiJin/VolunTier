@@ -518,7 +518,7 @@ textarea {
   width: 100%;
   padding: 7px;
   border-radius: 3px;
-  border: 1px solid #fff;
+  border: 1px solid black;
 }
 
 textarea {
@@ -624,6 +624,54 @@ footer {
   margin-right: 1px;
 }
 
+.formGroup2 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.leftmar2 {
+  margin-top: 100px;
+  margin-left: 360px;
+}
+
+.checkbox{
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox_input {
+  display: none;
+}
+
+.checkbox_box {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #cccccc;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.checkbox_box::after {
+  content: '\2714';
+  color: #ffffff;
+  transform: scale(0);
+  transition: transform
+}
+
+.checkbox_input:checked + .checkbox_box {
+  background: #2266dc;
+  border-color: #2266dc;
+}
+
+.checkbox_input:checked + .checkbox_box::after {
+  transform: scale(1);
+}
 /*colors
 green: #65CBB6
 blue: #78BBE6
