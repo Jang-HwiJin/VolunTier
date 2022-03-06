@@ -34,6 +34,15 @@ app.get("/map", function(req, res) {
   res.render("map");
 });
 
+app.get("/signup", function(req, res) {
+  res.render("signup");
+});
+
+app.get("/login", function(req, res) {
+  res.render("login");
+});
+
+
 
 app.listen(3000, function() {
   console.log("Server is running on port 3000");

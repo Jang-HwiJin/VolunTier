@@ -6,6 +6,12 @@ Orange color: #e67e22
 /* BASIC SETUP */
 /* --------------------------------------- */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 /* --------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -46,7 +52,7 @@ section {
 
 .column4 {
   float: left;
-  width: 25%;
+  width: 24%;
 }
 
 .column3j {
@@ -61,12 +67,39 @@ section {
 
 .solidol {
   outline-style: solid;
-  outline-color: #1da1f2;
   background-color: burlywood;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.solidol2 {
+  margin-top: -15px;
+  background-color: floralwhite;
+  border-radius: 10px;
+}
+
+.leftmar {
+  margin-left: 20px;
 }
 
 .leftpadding {
   padding-left: 20px;
+}
+
+.leftmar {
+  margin-left: 60px;
+}
+
+.pad4 {
+  padding: 0 -4px;
+}
+
+.circrad {
+  border-radius: 90px;
+}
+
+.leftmar2 {
+  margin-left: 120px;
 }
 
 /* ----- HEADINGS ----- */
@@ -283,7 +316,7 @@ input[type="submit"]:active {
 /* --------------------------------------- */
 
 .section-steps {
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 .section-steps h2 {
@@ -348,51 +381,12 @@ input[type="submit"]:active {
 /* USERS" COMMENTS */
 /* --------------------------------------- */
 
-.section-comments {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/header.jpeg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-}
-
-blockquote {
-  padding: 2%;
-  font-style: italic;
-  line-height: 150%;
-  position: relative;
-  margin-top: 40px;
-  font-weight: bold;
-}
-
-blockquote:before {
-  content: "\201C";
-  font-size: 500%;
-  display: block;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-}
-
-cite {
-  font-size: 90%;
-  margin-top: 25px;
-  display: block;
-}
-
-cite img {
-  width: 200px;
-  border-radius: 50%;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
 /* --------------------------------------- */
 /* SIGN UP */
 /* --------------------------------------- */
 
 .section-plans {
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 .plan-box {
@@ -404,7 +398,7 @@ cite img {
 
 .plan-box div {
   padding: 15px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #fff;
 }
 
 .plan-box div:last-child {
@@ -413,7 +407,7 @@ cite img {
 }
 
 .plan-box div:first-child {
-  background-color: #fcfcfc;
+  background-color: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -459,7 +453,7 @@ textarea {
   width: 100%;
   padding: 7px;
   border-radius: 3px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
 }
 
 textarea {
@@ -479,9 +473,7 @@ input[type="checkbox"] {
 /* --------------------------------------- */
 
 footer {
-  background-color: #333;
   padding: 40px;
-  font-size: 90%;
 }
 
 .footer-nav,
@@ -514,13 +506,13 @@ footer {
 .social-links li a:visited {
   text-decoration: none;
   border: 0;
-  color: #888;
+  color: #fff;
   transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:after {
-  color: #ddd;
+  color: #fff;
 }
 
 #facebook,
@@ -544,9 +536,25 @@ footer {
   color: #c32aa3;
 }
 
-footer p {
-  color: #888;
-  text-align: center;
-  font-size: 90%;
-  margin-top: 30px;
+.circular {
+    border-radius: 100%;
+    width: 100px;
+    height: 75px;
+}
+
+.vline {
+  border-right: 3px solid lightgray;
+}
+
+.stock_img {
+  margin-left: 150px;
+  height: 250px;
+  width: 250px;
+}
+
+.lmar{
+  margin-left: : 1px;
+}
+.rmar {
+  margin-right: 1px;
 }
